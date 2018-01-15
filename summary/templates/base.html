@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="/static/css/sumbrary.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/static/vendor/js/js.js"></script>
+
+  <title>Sumbrary</title>
+
+</head>
+
+<body text-align=center class="full-bg">
+    <div data-role="page">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg top fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../" style=color:white style=font-size:26pt>Sumbrary</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      {% block navBar %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../login/" style=color:white>Log In  |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../signup/" style=color:white>Sign Up</a>
+                        </li>
+                      {% endblock %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="container fill">
+
+          <div class="row">
+
+            <div class="col-lg-3">
+              <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="/static/media/universities.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="/static/media/subjects.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="/static/media/books.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <h1 class="my-4"></h1>
+              <div class="list-group"> <!-- The links here need to be linked to the index with only their respective pages -->
+                <a href="../../allUnis/" class="list-group-item">Universities</a>
+                <a href="../../allSubj/" class="list-group-item">Subjects</a>
+                <a href="../../allBooks/" class="list-group-item">Books</a>
+              </div>
+
+
+            </div>
+                <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+                <div class="row">
+                    {% block content %}
+
+                    {% endblock %}
+                </div>
+
+                </div>
+                <!-- /.col-lg-9 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+
+        <!-- Footer -->
+        <footer class="py-3 low">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright 2018 &copy; Anna Gjerdrum, Bob Sanders, Bram Peters & Bob Hofstede
+                <span style="display:inline-block; width:30px"></span>
+                    <a href="Contact.html" class="text-white">Contact</a>
+                </p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

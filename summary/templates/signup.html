@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block navBar %}
+  <li class="nav-item">
+      <a class="nav-link" href="../login/" style=color:white>Log In</a>
+  </li>
+  <li class="nav-item">
+      <div class="nav-link">&nbsp;|&nbsp;</div>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="../signup/" style=color:white>Sign Up</a>
+  </li>
+{% endblock %}
+
+
+{% block content %}
+    <div class="col-lg-5 col-md-6 mb-5">
+        <div class="card h-100 signup"> <!-- Changing to h-50 will make the box smaller -->
+
+            <div class="card-body">
+                <h4 class="card-title">
+                    <p align="center">Create account</p>
+                </h4>
+
+                <p class="card-text">
+                    {% if error_message %}
+                    <div style="color: red">{{ error_message }}</div>
+                    {% endif %}
+
+                    <form method="post"><!-- The data will be sent to a file called accountdata.php -->
+                    {% csrf_token %}
+                    Account name: <br>
+                    <input type="text" name="username" value="">
+                    <br>
+                    Password: <br>
+                    <input type="password" name="password" value="">
+                    <br><br>
+                    <input type="submit" value="Sign up">
+                    </form>
+                </p>
+            </div>
+        </div>
+     </div>
+       {% endblock %}

@@ -1,0 +1,62 @@
+/way Antoran Wastes 65.5 26.6 Mother Rosula (Entrance) /way 
+/way Antoran Wastes 60.9 22.9	
+/way Krokuun 55.5 80.2	
+/way Antoran Wastes 61.7 37.2	
+/way Krokuun 58.0 74.8	
+/way Krokuun 69.6 57.5	
+/way Krokuun 69.7 80.5	
+/way Antoran Wastes 53.1 35.8	
+/way Antoran Wastes 65.6 26.6 Entrance
+/way Krokuun 70.5 33.7	
+/way Krokuun 42.0 57.1 (Path up)	
+/way Krokuun 53.4 30.9	
+/way Mac'Aree 55.7 59.9	
+/way Mac'Aree 43.8 60.2	
+/way Mac'Aree 36.3 23.6	
+/way Mac'Aree 33.7 47.5
+/way Mac'Aree 27.2 29.8
+/way Mac'Aree 30.3 40.4	
+/way Mac'Aree 35.5 58.7 (2nd floor)	
+/way Mac'Aree 48.5 40.9	
+/way Mac'Aree 58.0 30.9	
+/way Mac'Aree 61.4 50.2	
+/way Mac'Aree 56.8 14.5	
+/way Mac'Aree 49.5 52.8
+/way Antoran Wastes 63.1 25.2 Entrance	
+/way Antoran Wastes 52.7 29.5	
+/way Antoran Wastes 73.2 70.8	
+/way Antoran Wastes 75.6 56.5	
+/way Antoran Wastes 64.3 48.2	
+/way Antoran Wastes 50.9 55.3	
+/way Mac'Aree 44.6 71.6	
+/way Antoran Wastes 56.2 45.5	
+/way Antoran Wastes 57.4 32.9 (Inside building)	
+/way Antoran Wastes 58.50, 11.75		
+/way Krokuun 60.8 20.8
+/way Krokuun 41.7 70.2	
+/way Antoran Wastes 66.0 54.1	
+/way Krokuun 50.3 17.3 (Entrance)	
+/way Krokuun 33.0 76.0	
+/way Krokuun 44.5 58.7	
+/way Mac'Aree 65.3 67.5	
+/way Mac'Aree 38.7 55.8	
+/way Mac'Aree 41.3 11.6	
+/way Mac'Aree 63.8 64.6
+/way Mac'Aree 39.2 66.6	
+/way Mac'Aree 35.2 37.2	
+/way Mac'Aree 70.4 46.7	
+/way Mac'Aree 44.2 49.8	
+/way Mac'Aree 59.2 37.7	
+/way Mac'Aree 60.4 29.7
+/way Mac'Aree 64.0 29.5	
+/way Mac'Aree 49.7 9.9	
+/way Antoran Wastes 61.9 64.3
+/way Antoran Wastes 55.7 21.9
+/way Antoran Wastes 62.4 53.8	
+/way Antoran Wastes 80.5 62.8 (portal)	
+/way Antoran Wastes 61.1 45.7 Path start
+
+36	The Many-Faced Devourer			
+38	Rezira the Seer	
+6	Squadron Commander Vishax			
+7	Soultender Videx

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% for uni in unis %}
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100">
+        <a href="../university/{{ uni.pk }}"><img class="card-img-top" src="http://www.iconarchive.com/download/i91616/icons8/windows-8/Science-University.ico" alt=""></a>
+        <div class="card-body">
+            <h4 class="card-title">
+                <a href="../university/{{ uni.pk }}" color=#198dA5>{{ uni.name }}</a>
+            </h4>
+
+            <p class="card-text">{{ uni.country }}
+        </div>
+        <div class="card-footer">
+            <small class="text-muted"></small>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

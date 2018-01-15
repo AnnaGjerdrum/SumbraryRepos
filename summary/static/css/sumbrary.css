@@ -1,0 +1,159 @@
+body {
+    padding-top: 54px;
+    box-sizing: none;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+div.col-lg-9 {
+    margin-top: 15px;
+}
+
+.fill{
+    min-height: calc(100vh - 106px);
+
+}
+
+.low {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #198DA5;
+    text-decoration-color: white;
+    font-size: 9pt;
+}
+
+.top {
+    background-color: #198DA5;
+    text-decoration-color: white;
+}
+
+.full-bg {
+    background: url("/static/media/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh
+}
+
+#carouselExampleIndicators .carousel-indicators {
+    margin-bottom: -40px;
+}
+
+#carouselExampleIndicators .carousel-indicators li {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 30%;
+    height: 20px;
+    width: 20px;
+}
+
+#carouselExampleIndicators .carousel-indicators li:hover {
+    background-color: #83C0B8;
+}
+
+#carouselExampleIndicators .carousel-indicators li.active  {
+    background-color: #198DA5;
+}
+
+.list-group {
+    padding-top: 60px;
+}
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.list-group-item {
+    background-color: #83C0B8;
+}
+
+table {
+  background-color: white;
+}
+
+a.list-group-item  {
+    color: #f8f9fa;
+    background-color: #83C0B8
+}
+
+h4.card-title a{
+    color: #198DA5;
+}
+
+h3.my-4 {
+    color: #198DA5;
+}
+
+.login {
+    background-color: #ffd699;
+}
+
+.signup {
+    background-color: crimson;
+}
+
+.user {
+    background-color: aliceblue;
+}
+
+.searchfunction [type=text]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("/static/img/sample.jpeg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.input[type=text]:focus {
+    width: 100%;
+}
+
+
+/* SEARCH BAR CSS */
+#searchInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#searchTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#searchTable th, #searchTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#searchTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#searchTable tr.header, #searchTable tr:hover {
+  background-color: #f1f1f1;
+}
