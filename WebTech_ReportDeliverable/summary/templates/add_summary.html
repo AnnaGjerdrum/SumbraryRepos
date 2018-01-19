@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-lg-5 col-md-6 mb-5">
+    <div class="card h-100 login">
+        <!-- Changing to h-50 will make the white box smaller -->
+
+        <div class="card-body">
+            <h4 class="card-title">
+                <p align="center">Add summary or solution:</p>
+            </h4>
+
+            <p class="card-text">
+                <form method='post' enctype="multipart/form-data">
+                  {% csrf_token %}
+                    Title: <br>
+                    <input type="text" name="title" value="">
+                    <br> Book: <br>
+                    <input type="text" name="book">
+                    <br> Subject: <br>
+                    <input type"text" name="subject">
+                    <br> University: <br>
+                    <input type="text" name="university">
+                    <br>
+                    Upload File (.pdf or .docx) <br>
+                    <input type="file" class="fa fa-upload" name="myfile" >
+                    <br>
+                    <button type="submit">Publish Summary</button>
+                </form>
+                <!-- This part is the same as sign up, and instead of logging in it will just send data to a database. I do not know how to create a solid log in at the moment -->
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

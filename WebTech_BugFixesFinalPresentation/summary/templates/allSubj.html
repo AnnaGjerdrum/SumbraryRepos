@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% for subj in subjs %}
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100">
+        <a href="../subject/{{ subj.pk }}"><img class="card-img-top" src="https://thumbs.dreamstime.com/z/school-subjects-icons-set-circular-symbols-middle-high-41769690.jpg" alt="" style="padding:20px;"></a>
+        <div class="card-body">
+            <h4 class="card-title">
+                <a href="../subject/{{ subj.pk }}" color=#198dA5>{{ subj.subjectName }}</a>
+            </h4>
+
+            <p class="card-text">{{ subj.subjectCode }}
+        </div>
+        <div class="card-footer">
+            <small class="text-muted"></small>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="col-lg-10 col-md-6 mb-5">
+  <div class="card h-100"> <!-- Changing to h-50 will make the white space transparent -->
+
+    <div class="card-body">
+      <h4 class="card-title">
+        <p><a href="#" color=#198dA5>{{ summary.title }}</a></p>
+        <h6 class="card-text"><b>Submitted by</b> <i><u>{{ summary.user }}</u></i> <b>on</b> <i><u>{{ summary.published_date }}</u></i></h6>
+        <p style="font-size: 10pt;" align="right" >Share</p>
+        <!-- Email -->
+        <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+          <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" width="25" align="right"/>
+        </a>
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" width="25" align="right"/>
+        </a>
+
+        <!-- Google+ -->
+        <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" width="25" align="right"/>
+        </a>
+      </h4>
+
+      <p class="card-text"><b>Book:</b> {{ summary.book }}</p>
+      <p class="card-text"><b>Subject:</b> {{ summary.subject }}</p>
+      <p class="card-text"><a href="../media/{{ summary.filepath }}">Download</a></p>
+
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"> <i style="float: left"> Rating: {{ summary.rating }} / 5 </i><i style="float: right">({{ summary.numRates }} ratings)</i></small>
+    </div>
+    <!--<div height="auto"> -->
+      <iframe src="../media/{{ summary.filepath }}" width="100%" height="580px" />
+    <!--</div>-->
+  </div>
+</div>
+
+
+<h1></h1>
+<h1></h1>
+
+{% endblock %}
